@@ -171,3 +171,26 @@ generalOrders({
     brass: "Capt. Obvious"
 });
 
+
+
+//changing objects to strings and strings to objects
+
+// var myObject = {
+//     firstname: "Ollie",
+//     isAGamer: true
+// }
+// console.log(JSON.stringify(myObject));
+
+
+// var newValue = JSON.parse('{"firstname": "Ollie", "isAGamer": true}');
+
+// console.log(newValue);
+
+
+function food() {
+    console.log('pie');
+}
+
+food.pastries = 'scones';
+console.log(food.pastries);
+
