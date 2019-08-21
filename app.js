@@ -194,3 +194,25 @@ function food() {
 food.pastries = 'scones';
 console.log(food.pastries);
 
+
+
+
+
+
+
+var newObject = {
+    firstname: "Ollie",
+    lastname: "Vargas",
+    occupation: "programmer",
+    address: {
+        state: "Texas",
+        city: "Katy",
+        street: "711 Mountain Meadows Dr."
+    }
+};
+
+function myArray() {
+    console.log(newObject.address.street);
+}
+myArray();
+
