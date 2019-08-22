@@ -168,7 +168,7 @@ function generalOrders(order) {
 generalOrders(fireTeam);
 generalOrders({
     designatedRifleman: "Capt. Von Sweeticus", 
-    brass: "Capt. Obvious"
+    brass: " Capt. Obvious"
 });
 
 
