@@ -216,3 +216,84 @@ function myArray() {
 }
 myArray();
 
+
+
+/*Exercise 1
+Write a javascript program to check two numers and return true if one of
+the numbers is 100 or if the sum of the two numbers is 100.
+*/
+
+
+const myVar = (a, b) => {
+    if (a === 100 || b === 100 || a + b === 100) {
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+console.log(myVar(100, 0));
+console.log(myVar(0, 100));
+console.log(myVar(20, 80));
+console.log(myVar(30, 60));
+
+
+/*Exercise 2
+Write a javascrip program to get the extension of a filename.
+*/
+
+const myExtension = (str) => 
+    str.slice(str.lastIndexOf('.'))
+
+console.log(myExtension('app.html'));
+console.log(myExtension('nan.undefined.py'));
+
+/*Exercise 3
+Write a javascript program to replace every character in a given string with 
+the character following it in the alphabet.
+*/
+
+
+const charShift = (str) =>
+    str.split('')
+    .map(char => String.fromCharCode(char.charCodeAt(0) + 1))
+    .join('');
+
+console.log(charShift('cdefg'));
+
+
+/*Exercise 4
+Write a javascript program to get the current date.
+Expected output:
+mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyy
+*/
+
+const getDate = (date = new Date()) => {
+    const days = date.getDate();
+    const months = date.getMonth() + 1;
+    const years = date.getFullYear();
+    return `${days}-${months}-${years}`;
+}
+
+console.log(getDate());
+
+/*Exercise 5
+Write a javascript program to create a new string adding "New!" in front of a given string.
+If the given string is "New" already then return the original string.
+*/
+
+const newString = (str) => 
+    str.indexOf('New!') === 0 ? str: `New! ${str}`;
+console.log(newString("New! Items"));
+
+
+
+
+
+
+
+
+
+
+
