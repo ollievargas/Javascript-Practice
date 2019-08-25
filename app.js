@@ -276,6 +276,7 @@ const getDate = (date = new Date()) => {
     return `${days}-${months}-${years}`;
 }
 
+
 console.log(getDate());
 
 /*Exercise 5
