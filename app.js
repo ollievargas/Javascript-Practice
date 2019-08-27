@@ -290,6 +290,38 @@ console.log(newString("New! Items"));
 
 
 
+function a() {
+    console.log(this);
+    this.newvariable = "Yo!"
+
+}
+
+var b = function() {
+    console.log(this);
+}
+a();
+console.log(newvariable);
+b();
+
+var c = {
+    name: 'practice time!',
+    log: function() {
+        var self = this;
+
+        self.name = 'NewPractice time!'
+        console.log(self);
+
+        var setname = function(newname) {
+            self.name = newname;
+        }
+        setname("Updated again!")
+        console.log(self);
+    }
+}
+c.log();
+
+
+
 
 
 
