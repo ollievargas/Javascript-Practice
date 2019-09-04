@@ -332,7 +332,7 @@ var arr = [
         address: '111 main St.'
     },
     function(name) {
-        var greeting = 'Hello ';
+        var greeting = 'Hello  ';
         console.log(greeting + name);
     },
     'hello'
