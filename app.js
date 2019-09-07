@@ -349,6 +349,51 @@ arr[3](arr[2].address);
 
 
 
+// the result will be 3 for all three results. The for loop runs until it hits 3 then refers back to the parent
+// context in memory meaning i=3 for all 3 being invoked
+
+function myFunctions() {
+    var myVar = [];
+    for (var i = 0; i < 3; i++) {
+        myVar.push(
+            function() {
+                console.log(i);
+            }
+        )
+    }
+    return myVar;
+}
+var result = myFunctions();
+result[0]();
+result[1]();
+result[2]();
+
+
+
+
+function myGreeting(language) {
+    return function(firstname, lastname) {
+        if (language === 'en') {
+            console.log('Hello ' + firstname + ' ' + lastname);
+        }
+        if (language === 'es') {
+            console.log('Hola ' + firstname + ' ' + lastname);
+        }
+    }
+}
+var enGreet = myGreeting('en');
+var esGreet = myGreeting('es');
+
+enGreet('Ollie', 'Vargas');
+esGreet('Ollie', 'Vargas');
+
+
+
+
+
+
+
+
 
 
 
