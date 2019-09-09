@@ -382,9 +382,13 @@ function myGreeting(language) {
     }
 }
 var enGreet = myGreeting('en');
+
 var esGreet = myGreeting('es');
 
+
+
 enGreet('Ollie', 'Vargas');
+
 esGreet('Ollie', 'Vargas');
 
 
