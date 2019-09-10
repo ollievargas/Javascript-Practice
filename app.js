@@ -401,6 +401,76 @@ esGreet('Ollie', 'Vargas');
 
 
 
+const automobiles = [
+    {make: "Toyota", type: "truck", model: "tacoma"},
+    {make: "Honda", type: "car", model: "prelude"},
+    {make: "Dodge", type: "car", model: "charger"},
+    {make: "Chevrolet", type: "truck", model: "silverado"},
+    {make: "Hyundai", type: "car", model: "sonata"},
+    {make: "Ford", type: "suv", model: "explorer"},
+    {make: "Lincoln", type: "suv", model: "navigator"},
+    {make: "Toyota", type: "truck", model: "tacoma"}
+];
+
+const myNum = [21, 18, 45, 76, 32, 94, 8, 13, 87, 14, 92, 20];
+
+//using for loop to find automobile values
+
+for(let i = 0; i < automobiles.length; i++) {
+    console.log(automobiles[i]);
+}
+
+
+
+
+//using forEach to find automobile values
+
+automobiles.forEach(function(vehicles) {
+    console.log(vehicles.type);
+});
+
+
+
+
+//using for loop to find ages 21 and over
+
+let myAge = [];
+for(let i = 0; i < myNum.length; i++) {
+    if(myNum[i] >= 21) {
+        myAge.push(myNum[i]);
+    }
+}
+console.log(myAge);
+
+
+//using filter to find ages 21 and over
+
+
+const myAge = myNum.filter(function(age) {
+    if(age >= 21) {
+        return true;
+    }
+});
+console.log(myAge);
+
+
+
+//using es6 and filter to find ages 21 and over
+
+
+const myAge = myNum.filter(age => age >= 21);
+console.log(myAge);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
