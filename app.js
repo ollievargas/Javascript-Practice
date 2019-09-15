@@ -410,7 +410,8 @@ const automobiles = [
     {make: "Hyundai", type: "car", model: "sonata"},
     {make: "Ford", type: "suv", model: "explorer"},
     {make: "Lincoln", type: "suv", model: "navigator"},
-    {make: "Toyota", type: "truck", model: "tacoma"}
+    {make: "Toyota", type: "truck", model: "tacoma"},
+    {make: "Pontiac", type: "car", model: "GTO"}
 ];
 
 const myNum = [21, 18, 45, 76, 32, 94, 8, 13, 87, 14, 92, 20];
