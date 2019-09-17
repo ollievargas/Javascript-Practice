@@ -414,7 +414,7 @@ const automobiles = [
     {make: "Pontiac", type: "car", model: "GTO"}
 ];
 
-const myNum = [21, 18, 45, 76, 32, 94, 8, 13, 87, 14, 92, 20];
+const myNum = [21, 18, 45, 76, 32, 94, 8, 13, 87, 14, 92, 20, 15, 8, 90];
 
 //using for loop to find automobile values
 
@@ -454,6 +454,8 @@ const myAge = myNum.filter(function(age) {
     }
 });
 console.log(myAge);
+
+
 
 
 
