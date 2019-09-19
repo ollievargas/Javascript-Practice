@@ -471,6 +471,40 @@ console.log(myAge);
 
 
 
+document.body.innerHTML = "Yo this is some javascript!";
+
+
+var myAge = 20;
+var myNum = 21;
+
+if (myAge === 21) {
+    console.log("Come on in!");
+}else if (myAge < 21) {
+    console.log("Get Older!");
+}
+
+
+var gender = "Male";
+var myAge = 21;
+
+if (gender === "Male") {
+    if (myAge >= 21) {
+        console.log("You are a " + gender + " and are of age, cmon in!");
+    }else{
+        console.log("No can do, youre not old enough!");
+    }
+}else if (gender === "Female") {
+    if (myAge >= 21) {
+        console.log("You are a " + gender + " and are of age, cmon in!");
+    }else{
+        console.log("Sorry lady, no can do!");
+    }
+}
+
+
+var items = ["Ollie", 7, "Tom", 9]
+
+console.log(items[2]);
 
 
 
