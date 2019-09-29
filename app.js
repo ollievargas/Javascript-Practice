@@ -504,7 +504,7 @@ if (gender === "Male") {
 
 var items = ["Ollie", 7, "Tom", 9]
 
-console.log(items[2]);
+console.log(items[3]);
 
 
 
